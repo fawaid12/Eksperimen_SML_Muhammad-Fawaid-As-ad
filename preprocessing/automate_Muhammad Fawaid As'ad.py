@@ -35,7 +35,12 @@ def scale_data(df):
     y = df['Outcome']
     
     scaler = StandardScaler()
-    X_scaled = scaler.fit_transform(X)
+    X_scaled_array= scaler.fit_transform(X)
+
+    # Konversi kembali ke DataFrame dengan nama kolom asli
+
+    X_scaled = pd.DataFrame(X_scaled_array, columns=X.columns)
+    
     
     return X_scaled, y
 
