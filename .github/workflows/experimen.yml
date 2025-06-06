@@ -32,10 +32,10 @@ jobs:
 
     - name: Run Python Script
       run: |
-        python preprocessing/automate_Muhammad\ Fawaid\ As*.py
+        python preprocessing/automate_Muhammad\ Fawaid\ As'ad.py
 
     - name: Run Jupyter Notebook
       run: |
         jupyter nbconvert --to notebook --execute \
-          preprocessing/Eksperimen_Muhammad\ Fawaid\ *.ipynb \
+          preprocessing/Eksperimen_Muhammad\ Fawaid\ As'ad.ipynb \
           --output executed_notebook.ipynb
