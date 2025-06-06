@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def load_data(path):
-    full_path = os.path.join(BASE_DIR, path)
+    full_path = os.path.join(BASE_DIR, "..", "diabetes.csv")
     return pd.read_csv(full_path)
 
 def clean_data(df):
