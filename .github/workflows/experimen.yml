@@ -1,6 +1,7 @@
 name: Run Preprocessing and Notebook
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'preprocessing/**'
